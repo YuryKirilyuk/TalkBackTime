@@ -1,0 +1,10 @@
+.page-title {
+  .et_pb_module {
+    @media screen and (max-width: 1100px) {
+      padding-top: 130px !important;
+    }
+  }
+  h1 {
+    transform: translateY(-20px);
+  }//h1
+}//.page-title

@@ -573,6 +573,14 @@ Version:     1.0.0
 .mtb-150 {
   margin: 150px 0; }
 
+@media screen and (max-width: 1100px) {
+  .page-title .et_pb_module {
+    padding-top: 130px !important; } }
+.page-title h1 {
+  -webkit-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px); }
+
 .et_pb_button {
   border-radius: 6px;
   height: 55px;
@@ -742,6 +750,9 @@ Version:     1.0.0
       max-height: 101px; } }
 #main-header.et-fixed-header #logo {
   max-height: 50px; }
+
+body:not(.home) #main-header {
+  background: #eff4fa; }
 
 #main-footer {
   position: relative;

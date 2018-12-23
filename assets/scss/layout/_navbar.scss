@@ -128,3 +128,12 @@
   }//#et-fixed-header
   
 }//#main-header
+
+body:not(.home) {
+  #main-header {
+    background: #eff4fa;
+  }
+  #main-content {
+    //padding-top: 130px;
+  }
+}//body:not(.home)
