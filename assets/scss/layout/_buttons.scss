@@ -1,0 +1,19 @@
+.et_pb_button {
+  border-radius: 6px;
+  height: 55px;
+  line-height: 44px !important;
+  min-width: 248px;
+  text-align: center;
+  &:hover {
+    background-color: #ff3965;
+    border-color: #ff3965;
+  }
+  &:after {
+    font-size: 23px !important;;
+    line-height: inherit!important;
+    margin-left: 15px !important;
+  }
+  &:hover:after {
+    transform: translateX(10px);
+  }
+}//.et_pb_button 
