@@ -1,0 +1,66 @@
+.selected-clients-section {
+
+  .et_pb_column {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    &:after {content: none;}
+  }
+
+  .et_pb_text {width: 100%;}
+
+  .et_pb_image {
+    display: inline-block;
+    margin: 0 5px;
+    margin-bottom: 30px !important;
+  }
+
+  + .testimonial-section {
+    background-image: linear-gradient(29deg, #f7fafd 48%, #eff4fa 0);
+    padding-top: 120px !important;
+  }
+}//.selected-clients-section
+
+
+.case-studies-section {
+
+  > .et_pb_row {
+    background: #f6fafd;
+    @media screen and (min-width: 979px) {display: flex;}
+
+    h4 {margin-bottom: 15px;}
+
+    > .et_pb_column_single {
+      display: flex;
+      flex-shrink: 0;
+      @media screen and (min-width: 979px) {
+        margin-right: 3.8%;
+        width: 355px;
+      }
+      .et_pb_text {
+        background-image: url('data:image/png;base64,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');
+        background-size: 270px 260px;
+        background-position: 0 -25px;
+      }
+    }// > .et_pb_column_single
+
+     .et_pb_specialty_column {
+      h4 {margin-bottom: 18px;}
+      .et_pb_text {
+        @media screen and (max-width: 980px) {
+          text-align: justify;
+        }
+      }
+
+    }//.et_pb_specialty_column
+
+  }//> .et_pb_row
+
+  + .testimonial-section {
+    background-image: linear-gradient(-30deg, #eff4fa 24%, #f7fafd 0);
+    padding-top: 95px !important;
+  }
+
+}//case-studies-section
