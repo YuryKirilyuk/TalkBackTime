@@ -14,9 +14,14 @@
     }
   }//..et_pb_row_fullwidth
 
+  .et_pb_image {
+    height: 100%;
+    .et_pb_image_wrap {height: 100%;}
+  }
   img {
     min-height: 250px;
     object-fit: cover;
+    @media screen and (min-width: 1110px) {min-height: 520px;}
     @media screen and (min-width: 980px) {height: 100%;}
   }
 
@@ -49,7 +54,6 @@
 
 
 .contact-form-section {
-
 
   .et_pb_row {
     @media screen and (max-width: 425px) {width: 100%;}
