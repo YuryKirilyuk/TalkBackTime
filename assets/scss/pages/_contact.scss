@@ -37,7 +37,7 @@
   }//.contact-address
 
   .emails-module {
-    padding: 155px 0 0 9.5%;
+    padding: 90px 0 0 9.5%;
     @media screen and (max-width: 980px) {padding: 0 20px;}
   }//.emails-module
 
@@ -50,6 +50,17 @@
   }//a
 
 }//.contacts-section
+
+
+.tbt-feedback-section {
+  background-image: linear-gradient(30deg, #f7fafd 38%, #fff 0);
+  h3 {margin-bottom: 45px;}
+  p span {white-space: nowrap;}
+  a {
+    text-decoration: underline;
+    &:hover {text-decoration: none;}
+  }
+}//.tbt-feedback-section
 
 
 .section-blue-contact {
