@@ -445,18 +445,21 @@
       min-height: 435px;
     }    
   }
-  .fluid-width-video-wrapper:before,
-  .et_pb_video_overlay_hover:before {
-    background: url(assets/img/logo2.png) no-repeat center;
-    background-size: contain;
-    bottom: 45px;
-    content: '';
-    height: 20.6896%;
-    position: absolute;
-    right: 35px;
-    width: 23.0543%;
-    z-index: 10;
-  }
+  .watermark {
+    .fluid-width-video-wrapper:before,
+    .et_pb_video_overlay_hover:before {
+      background: url(assets/img/logo2.png) no-repeat center;
+      background-size: contain;
+      bottom: 45px;
+      content: '';
+      height: 20.6896%;
+      position: absolute;
+      right: 35px;
+      width: 23.0543%;
+      z-index: 10;
+    }
+  }//.watermark
+
   
   .et_pb_video_play {
     background: url('data:image/svg+xml;utf8,<svg viewBox="35 35 150 150" xmlns="http://www.w3.org/2000/svg"><title>play</title><path d="M110.002,184.956 C68.609,184.956 35.053,151.399 35.053,110.006 C35.053,68.612 68.609,35.056 110.002,35.056 C151.396,35.056 184.952,68.612 184.952,110.006 C184.952,151.399 151.396,184.956 110.002,184.956 ZM141.722,103.965 L95.559,74.627 C95.559,74.627 94.959,74.187 93.140,74.187 C90.225,74.187 87.862,76.551 87.862,79.466 L87.862,139.289 C87.862,142.204 90.225,144.567 93.140,144.567 C94.094,144.567 94.941,144.245 95.713,143.803 L142.417,114.874 C146.207,112.668 147.684,112.289 147.684,109.377 C147.684,106.999 144.323,105.505 141.722,103.965 Z" fill="#fff"/></svg>') no-repeat center;
