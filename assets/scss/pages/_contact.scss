@@ -12,7 +12,7 @@
       width: 50%;
       @media screen and (max-width: 980px) {width: 100%;}
     }
-  }//..et_pb_row_fullwidth
+  }//.et_pb_row_fullwidth
 
   .et_pb_image {
     height: 100%;
@@ -29,7 +29,7 @@
     bottom: 35px;
     padding-left: 20px;
     position: absolute;
-    @media screen and (min-width: 1249px) {right: 40%;}
+    @media screen and (min-width: 981px) {right: 145px;}
     @media screen and (max-width: 375px) {bottom: 25px;}
 
     h4 {margin-bottom: 25px;}
@@ -37,7 +37,11 @@
   }//.contact-address
 
   .emails-module {
-    padding: 90px 0 0 9.5%;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    padding: 0 0 0 9.5%;
     @media screen and (max-width: 980px) {padding: 0 20px;}
   }//.emails-module
 
@@ -118,22 +122,38 @@
     background-position: 0 top;
     background-size: cover;
   }
+  > .et_pb_row {
+    @media screen and (max-width: 650px) {width: 95%;}
+  }
 
 
 
   .et_pb_social_icon {
     margin: 0 4.5% 8px;
-    @media screen and (max-width: 475px) {margin-bottom: 30px;}
+    @media screen and (max-width: 550px) {margin: 0 1.5% 30px;}
 
     .icon {
-      height: 147px;
+      height: 120px;
+      line-height: 120px;
       transition: $default-transition;
-      width: 147px;
+      width: 120px;
       &:before {
-        height: 147px;
-        font-size: 66px;
-        line-height: 147px;
-        width: 147px;
+        height: 100%;
+        font-size: 52px;
+        line-height: inherit;
+        width: 100%;
+      }
+      @media screen and (max-width: 475px) {
+        height: 100px;
+        line-height: 100px;
+        width: 100px;
+        &:before {font-size: 42px;}
+      }
+      @media screen and (max-width: 374px) {
+        height: 80px;
+        line-height: 80px;
+        width: 80px;
+        &:before {font-size: 36px;}
       }
       &:hover {box-shadow: 0 0 50px 0 rgba(0,0,0,.3);}
     }// .icon

@@ -13,11 +13,14 @@
       position: static;
       width: auto;
       @media screen and (max-width: 1100px) {margin-right: 0;}
-      @media screen and (max-width: 424px) {display: none;}
+      @media screen and (max-width: 424px) {
+        margin-right: 5px;
+      }
       
     }//.logo_container
     
-    
+
+
     #et-top-navigation {
       float: none;
       padding-left: 0 !important;
@@ -49,6 +52,7 @@
           a {
             font-weight: 600;
             text-transform: uppercase;
+            white-space: nowrap;
             &:hover {
               color: #6369e3 !important;
               opacity: 1;
@@ -56,14 +60,25 @@
           }
         }//li
       }//#top-menu
-      
+
+      //MOBILE MENU
       #et_mobile_nav_menu {        
         @media screen and (max-width: 1100px) {display: block;}
-        .et_mobile_menu {background: #fff;}
-      }
+        .mobile_menu_bar {
+          &:before {
+            color: #6871e1;
+          }
+        }//.mobile_menu_bar
+        .et_mobile_menu {
+          background: #fff;
+          border-color: #6871e1;
+          a {font-size: 18px;}
+        }
+      }//#et_mobile_nav_menu
       
     }//#et-top-navigation
-    
+
+
     .login-group {
       align-items: center;
       display: flex;
@@ -71,7 +86,7 @@
       @media screen and (max-width: 1100px) {margin-left: 0;}
       a {margin-left: 20px;}
       .et_pb_button {
-        border-color: rgba(255, 255, 255, .4);
+        border-color: #384353;
         color: #fff;
         display: block;
         height: 41px;
@@ -84,9 +99,13 @@
         text-align: center;
         &:after {content: none;}
         @media screen and (max-width: 1100px) {margin-left: 0;}
+        @media screen and (max-width: 424px) {
+          font-size: 13px;
+          min-width: 125px;
+        }
       }
       .button {
-        background: #d4d6d5;
+        background: rgba(255, 255, 255, .5);
         border: 1px solid #384353;
         border-radius: 6px;
         color: #384353;
@@ -99,7 +118,7 @@
         text-align: center;
         text-transform: uppercase;
         width: 113px;
-        &:hover {background: darken(#d4d6d5, 5%);}
+        &:hover {background: darken(#fff, 5%);}
         @media screen and (max-width: 549px) {display: none;}
       }
       .login-link {
@@ -107,7 +126,10 @@
         font-size: 15px;
         text-transform: uppercase;
         &:hover {color: #6369e3;}
-        //@media screen and (max-width: 549px) {margin: 0;}
+        @media screen and (max-width: 424px) {
+          font-size: 13px;
+          margin-left: 10px;
+        }
       }
     }//.login
     
@@ -126,8 +148,12 @@
       max-height: 50px;
     }
   }//#et-fixed-header
-  
+
+
 }//#main-header
+
+
+
 
 body:not(.home) {
   #main-header {
