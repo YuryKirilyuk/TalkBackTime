@@ -117,8 +117,12 @@
         padding: 4.5px 10px;
         text-align: center;
         text-transform: uppercase;
+        transition: all .2s ease;
         width: 113px;
-        &:hover {background: darken(#fff, 5%);}
+        &:hover {
+          background: #6269e2;
+          color: #fff;
+        }
         @media screen and (max-width: 549px) {display: none;}
       }
       .login-link {
