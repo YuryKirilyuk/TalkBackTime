@@ -5,18 +5,28 @@
 
 #pricing-section {
   background-image: linear-gradient(28deg, #f4f8fc 57%, #fbfcfe 0);
+  > .et_pb_row {
+    @media screen and (max-width: 1300px) {width: 95%;}
+    @media screen and (max-width: 980px) {width: 100%;}
+    @media screen and (max-width: 767px) {width: 90%;}
+  }
 
   .et_pb_pricing_table_wrap {
     justify-content: space-between;
     max-width: 1290px;
     margin: auto;
+    @media screen and (max-width: 767px) {justify-content: center;}
   }
   .et_pb_pricing_table {
     border-radius: 10px;
     box-shadow: 0 16px 38px #eaeff3;
     margin: 0 15px 15px;
-    max-width: 400px;
+    max-width: 400px !important;
     overflow: hidden;
+    width: 30%;
+    @media screen and (max-width: 1100px) {margin: 0 7px 15px;}
+    @media screen and (min-width: 768px) {width: 30%!important;}
+
     .et_pb_pricing_content_top {
       border-bottom: 8px solid;
       height: 32px;
@@ -29,8 +39,13 @@
         display: inline-block;
         overflow: hidden;
         text-indent: -7px;
+        @media screen and (max-width: 980px) {
+          font-size: 14px;
+          text-indent: -6px;
+        }
       }
     }//.et_pb_pricing_content_top
+
     &:first-child {
       .et_pb_pricing_heading {
         background-image: url('data:image/png;base64,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'),
@@ -80,14 +95,19 @@
       font-size: 55px;
       margin-bottom: 5px;
       text-transform: uppercase;
+      @media screen and (max-width: 1100px) {font-size: 50px;}
+      @media screen and (max-width: 980px) {font-size: 40px;}
     }
     .et_pb_best_value {
       font-family: 'AvenirNextDemiBold', sans-serif;
       font-size: 39px;
+      @media screen and (max-width: 1100px) {font-size: 34px;}
+      @media screen and (max-width: 980px) {font-size: 30px;}
       &:before {
         content: '$';
         font-size: 24px;
         padding-right: 5px;
+        @media screen and (max-width: 980px) {font-size: 21px;}
       }
     }
   }//.et_pb_pricing_heading
@@ -113,9 +133,12 @@
         height: 53px;
         justify-content: center;
         line-height: 17px;
-        padding: 0 7px;
+        padding: 0 10px;
         &:nth-child(even) {background: #f6f9fe;}
         &:nth-child(odd) {background: #fff;}
+        @media screen and (max-width: 980px) {font-size: 15px;}
+        @media screen and (min-width: 768px) and (max-width: 980px) {height: 60px;}
+
         span span {color: #79899c;}
         span.block {display: block;}
       }
