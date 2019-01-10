@@ -48,9 +48,13 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 					echo et_core_fix_unclosed_html_tags( et_core_esc_previously( et_get_footer_credits() ) );
 					// phpcs:enable
 				?>
-                      <div class="footer-links">
-                        <a href="#">Privacy Policy</a>
-                      </div>
+                        <div class="lightmix">
+                            <img alt="" src="<?php bloginfo('stylesheet_directory');?>/assets/img/mcafee.png" />
+                            <a href="https://www.lightmix.com/" target="_blank">DC Website design by LightMix</a>
+                        </div>
+                        <div class="footer-links">
+                            <a href="#">Privacy Policy</a>
+                        </div>
 					</div>	<!-- .container -->
 				</div>
 			</footer> <!-- #main-footer -->

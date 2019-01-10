@@ -19,11 +19,18 @@
   }
   .et_pb_pricing_table {
     border-radius: 10px;
-    box-shadow: 0 16px 38px #eaeff3;
+    box-shadow: 0 16px 38px darken(#eaeff3, 10%);
     margin: 0 15px 15px;
     max-width: 400px !important;
     overflow: hidden;
+    transition: all .3s ease;
     width: 30%;
+    &:hover {
+      box-shadow: 0 20px 50px darken(#eaeff3, 20%);
+      @media screen and (min-width: 1024px) {
+        transform: scale(1.02);
+      }
+    }
     @media screen and (max-width: 1100px) {margin: 0 7px 15px;}
     @media screen and (min-width: 768px) {width: 30%!important;}
 
@@ -78,9 +85,6 @@
   }//et_pb_pricing_table
 
 
-
-
-
   .et_pb_pricing_heading {
     align-items: center;
     background-repeat: no-repeat;
@@ -113,12 +117,8 @@
   }//.et_pb_pricing_heading
 
 
-
-
-
-
   .et_pb_pricing_content {
-    font-family: 'AvenirNextMedium', sans-serif;
+    font-family: 'AvenirNextRegular', sans-serif;
     padding: 0;
 
   }//.et_pb_pricing_content
@@ -146,11 +146,6 @@
 
 
 
-
-
-
-
-
   .et_pb_button_wrapper {
     padding: 30px 0 0;
   }
@@ -165,7 +160,6 @@
         color: #fff !important;
       }
     }
-
 
 
   a {
