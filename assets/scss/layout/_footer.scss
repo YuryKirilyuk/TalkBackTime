@@ -120,7 +120,8 @@
 
 #footer-bottom {
   min-height: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  position: relative;
   .container {
     //align-items: center;
     border-top: 1px solid rgba(204, 204, 219, .12);
@@ -139,6 +140,10 @@
     #footer-info {
       min-width: 250px;
       padding: 0;
+      @media screen and (max-width: 980px) {
+        bottom: 20px;
+        position: absolute;
+      }
     }
     a {
       color: rgba(255,255,255,.4);

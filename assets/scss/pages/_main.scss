@@ -6,8 +6,13 @@
     min-height: 664px;
     padding-top: 190px !important;
   }
-  @media screen and (max-width: 980px) {padding-top: 80px;}
+  @media screen and (max-width: 980px) {
+    background-size: initial;
+    padding-top: 80px !important;
+    padding-bottom: 0;
+  }
   .hero-row {
+    @media screen and (max-width: 1799px) {width: 95%;}
     @media screen and (max-width: 768px) {
       .et_pb_column {width: 66%;}
     }
@@ -31,15 +36,20 @@
     overflow: hidden;  
     word-break: normal;
     word-wrap: normal;
-    @media screen and (min-width: 768px) {white-space: nowrap;}
-    @media screen and (max-width: 1799px) {font-size: 65px !important;}
-    @media screen and (max-width: 1490px) {font-size: 60px !important;}
-    @media screen and (max-width: 1300px) {font-size: 50px !important; line-height: 50px;}
-    @media screen and (max-width: 998px) {
+    @media screen and (min-width: 768px) {
+      padding-right: 1px;
+      white-space: nowrap;
+    }
+    //@media screen and (max-width: 1799px) {font-size: 65px !important;}
+    //@media screen and (max-width: 1490px) {font-size: 60px !important;}
+    @media screen and (max-width: 1330px) {font-size: 65px !important;}
+    @media screen and (max-width: 1110px) {
+      font-size: 50px !important;
       line-height: 48px;
       overflow: visible; 
       text-align: left !important;
     }
+    //@media screen and (max-width: 768px) {font-size: 34px !important; line-height: 50px;}
     //@media screen and (max-width: 375px) {text-align: center !important;}
     small {
       display: block;
@@ -49,14 +59,15 @@
       line-height: 48px;
       position: relative;
       text-align: right;  
-      @media screen and (max-width: 1799px) {font-size: 34px;}
-      @media screen and (max-width: 1490px) {font-size: 30px !important;}
-      @media screen and (max-width: 1300px) {font-size: 26px !important;}
-      @media screen and (max-width: 998px) {
+      //@media screen and (max-width: 1799px) {font-size: 34px;}
+      //@media screen and (max-width: 1490px) {font-size: 30px !important;}
+      @media screen and (max-width: 1330px) {font-size: 34px !important;}
+      @media screen and (max-width: 1110px) {
         float: none;
         font-size: 30px;
         text-align: left;
       }
+      @media screen and (max-width: 768px) {font-size: 26px !important;}
       @media screen and (max-width: 375px) {
         font-size: 26px;
         //text-align: center;
@@ -71,7 +82,7 @@
         right: 100%;
         top: 7px;
         width: 200%;
-        @media screen and (max-width: 998px) {content: none;}
+        @media screen and (max-width: 1110px) {content: none;}
       }
     }
   }//h1
@@ -88,7 +99,7 @@
       flex-direction: column;
     }    
     @media screen and (max-width: 1200px) {margin-right: 0;}
-    @media screen and (max-width: 998px) {
+    @media screen and (max-width: 1110px) {
       align-items: flex-start;
       text-align: left;
     }
@@ -108,8 +119,9 @@
       h2 {
         max-width: 300px;
         padding: 0;
-        @media screen and (max-width: 1470px) {font-size: 22px;}        
-        @media screen and (min-width: 710px) and (max-width: 980px) {max-width: 60%;}        
+        @media screen and (max-width: 1470px) {font-size: 22px;}
+        @media screen and (min-width: 710px) and (max-width: 980px) {max-width: 60%;}
+        @media screen and (max-width: 425px) {font-size: 18px;}
         //@media screen and (max-width: 375px) {text-align: center;}
       }
     }//.et_pb_promo_description 
@@ -124,7 +136,7 @@
       padding-right: 10px !important;
       text-shadow: none;
       white-space: nowrap;
-      @media screen and (max-width: 998px) {margin-left: 0;}
+      @media screen and (max-width: 1110px) {margin-left: 0;}
       @media screen and (max-width: 768px) {
         font-size: 20px;
         height: 60px;

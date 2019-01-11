@@ -26,11 +26,11 @@
   }
 
   .contact-address {
-    bottom: 35px;
+    bottom: 70px;
     padding-left: 20px;
     position: absolute;
     @media screen and (min-width: 981px) {right: 145px;}
-    @media screen and (max-width: 375px) {bottom: 25px;}
+    @media screen and (max-width: 425px) {bottom: 25px;}
 
     h4 {margin-bottom: 25px;}
     p {padding-bottom: 0;}
