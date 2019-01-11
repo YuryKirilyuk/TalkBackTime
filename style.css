@@ -256,7 +256,7 @@ body:not(.home) #main-header { background: #eff4fa; }
 
 @media screen and (max-width: 1200px) { #main-content .hero-section .hero-title { margin-right: 0; } }
 
-@media screen and (max-width: 980px) { #main-content .hero-section .hero-title { margin-left: 0 !important; } }
+@media screen and (max-width: 980px) { #main-content .hero-section .hero-title { border: none; margin-left: 0 !important; } }
 
 #main-content .hero-section h1 { overflow: hidden; word-break: normal; word-wrap: normal; }
 
