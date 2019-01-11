@@ -14,8 +14,6 @@ Version:     1.0.0
 
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
-#main-content { overflow: hidden; }
-
 @media screen and (max-width: 1100px) { .page-title .et_pb_module { padding-top: 130px !important; } }
 
 .page-title h1 { -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
@@ -342,7 +340,7 @@ body:not(.home) #main-header { background: #eff4fa; }
 
 @media screen and (min-width: 1401px) and (max-width: 1700px) { .opinion-section .opinion-item .item-title { font-size: 50px; } }
 
-@media screen and (min-width: 1171px) and (max-width: 1400px) { .opinion-section .opinion-item .item-title { font-size: 40px; } }
+@media screen and (min-width: 1171px) and (max-width: 1410px) { .opinion-section .opinion-item .item-title { font-size: 40px; } }
 
 @media screen and (min-width: 981px) and (max-width: 1170px) { .opinion-section .opinion-item .item-title { font-size: 30px; } }
 
