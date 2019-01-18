@@ -46,9 +46,15 @@
         display: inline-block;
         overflow: hidden;
         text-indent: -7px;
+        @media screen and (max-width: 1024px) {
+          font-size: 16px;
+          text-indent: -6px;
+        }
         @media screen and (max-width: 980px) {
           font-size: 14px;
-          text-indent: -6px;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
         }
       }
     }//.et_pb_pricing_content_top
@@ -90,10 +96,10 @@
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    height: 214px;
+    height: 260px;
     justify-content: center;
     margin-bottom: 0;
-    padding-bottom: 40px;
+    padding-bottom: 4rem;
     .et_pb_pricing_title {
       font-family: 'AvenirNextDemiBold', sans-serif;
       font-size: 55px;
@@ -105,6 +111,7 @@
     .et_pb_best_value {
       font-family: 'AvenirNextDemiBold', sans-serif;
       font-size: 39px;
+      position: relative;
       @media screen and (max-width: 1100px) {font-size: 34px;}
       @media screen and (max-width: 980px) {font-size: 30px;}
       &:before {
@@ -113,7 +120,18 @@
         padding-right: 5px;
         @media screen and (max-width: 980px) {font-size: 21px;}
       }
-    }
+      &:after {
+        content: '(billed annually)';
+        font-size: 19px;
+        font-family: 'AvenirNextRegular', sans-serif;
+        left: 0;
+        margin-top: .5rem;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 100%;
+      }
+    }//.et_pb_best_value
   }//.et_pb_pricing_heading
 
 
