@@ -38,6 +38,25 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 			<?php endif; ?>
 
 				<div id="footer-bottom">
+
+
+					<?php
+                    if(is_page('792') || is_page('801') || is_page('789')){
+
+                        $logo = ( $user_logo = et_get_option( 'divi_logo' ) ) && ! empty( $user_logo )
+						? $user_logo
+						: $template_directory_uri . '/images/logo.png';
+
+					    ob_start();
+					?>
+                    <div class="logo-footer">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                            <img src="<?php bloginfo('stylesheet_directory');?>/assets/img/logo_footer.png" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" data-height-percentage="<?php echo esc_attr( et_get_option( 'logo_height', '54' ) ); ?>" />
+                        </a>
+                    </div>
+
+                <?php } else { ?>
+
 					<div class="container clearfix">
 				<?php
 					if ( false !== et_get_option( 'show_footer_social_icons', true ) ) {
@@ -56,7 +75,10 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
                             <a href="#">Privacy Policy</a>
                         </div>
 					</div>	<!-- .container -->
-				</div>
+
+                <?php }  ?>
+
+				</div><!-- #footer-bottom -->
 			</footer> <!-- #main-footer -->
 		</div> <!-- #et-main-area -->
 
@@ -65,5 +87,8 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 	</div> <!-- #page-container -->
 
 	<?php wp_footer(); ?>
+
+    <script type="text/javascript" src="<?php bloginfo('stylesheet_directory');?>/assets/js/custom.js"></script>
+
 </body>
 </html>
