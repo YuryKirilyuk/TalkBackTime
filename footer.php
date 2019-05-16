@@ -88,6 +88,33 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 
 	<?php wp_footer(); ?>
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="video1" width="100%" height="315" src="https://www.youtube.com/embed/I3cHwaDHm8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+</div>
+
+
+
+
+
+
+    <script type="text/javascript" src="<?php bloginfo('stylesheet_directory');?>/assets/js/modal.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('stylesheet_directory');?>/assets/js/transition.js"></script>
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory');?>/assets/js/custom.js"></script>
 
 </body>

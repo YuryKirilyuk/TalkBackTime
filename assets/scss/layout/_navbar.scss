@@ -1,4 +1,7 @@
 #main-header {
+
+  .modal-open & {z-index: 10;}
+
   .container.et_menu_container {
     align-items: center;
     display: flex;

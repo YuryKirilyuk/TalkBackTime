@@ -40,6 +40,19 @@ jQuery(window).resize(function() {
 
 jQuery(function(){
 
+    var $iframe = jQuery('#videoModal iframe', jQuery(this)),
+        src = $iframe.attr('src');
+
+    jQuery('#videoModal').on('shown.bs.modal', function () {
+        $iframe.attr('src', src + '?autoplay=1');
+    });
+    jQuery("#videoModal").on('hidden.bs.modal', function (e) {
+        $iframe.attr("src", src);
+    });
+
+
+
+
     if(jQuery('.section-hero > section').length) {
 
         jQuery(window).on('load resize',imageHeight);

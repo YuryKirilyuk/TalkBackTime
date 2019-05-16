@@ -313,7 +313,7 @@
                 
                 <div class="login-group">
                   <a href="#" class="et_pb_button">Sign Up Free</a>                  
-                  <a href="#" class="button">Demo</a>
+                  <a href="#" class="button" data-toggle="modal" data-target="#videoModal">Demo</a>
                   <a href="#" class="login-link">Login</a>
                 </div>
                 
