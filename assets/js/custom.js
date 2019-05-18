@@ -51,6 +51,13 @@ jQuery(function(){
     });
 
 
+    jQuery('.page-id-3 .entry-content a[href^="#"]').click(function(){
+        var target = jQuery(this).attr('href');
+        jQuery('html, body').animate({scrollTop: jQuery(target).offset().top}, 400);
+        return false;
+    });
+
+
 
 
     if(jQuery('.section-hero > section').length) {
