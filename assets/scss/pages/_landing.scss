@@ -238,7 +238,7 @@
         padding: 30px 3.3%;
       }
       @media screen and (min-width: 981px) {
-        padding: 25px 0 0 6%;
+        padding: 45px 0 0 6%;
         width: 60%;
         &:last-child {
           padding-bottom: 50px;
@@ -260,34 +260,41 @@
       //line-height: normal;
       order: 1;
       position: absolute;
-      top: 275px;
+      transition: $default-transition;
+      top: 250px;
       @media screen and (max-width: 1024px) {
-        top: 260px;
+        top: 225px;
       }
       @media screen and (max-width: 980px) {
         padding: 0 40px;
-        top: 300px;
+        top: 270px;
       }
       @media screen and (max-width: 768px) {
-        top: 560px;
+        //top: 560px;
+        top: 420px;
       }
       @media screen and (max-width: 680px) {
-        top: 530px;
+        //top: 530px;
+        top: 395px;
       }
       @media screen and (max-width: 580px) {
-        top: 510px;
+        //top: 510px;
+        top: 375px;
       }
       @media screen and (max-width: 500px) {
         font-size: 14px;
         padding: 0 20px;
-        top: 505px;
+        //top: 505px;
+        top: 370px;
       }
       @media screen and (max-width: 410px) {
-        top: 480px;
+        //top: 480px;
+        top: 355px;
       }
       @media screen and (max-width: 320px) {
-        top: 460px;
         margin: 5px -10px 0;
+        //top: 460px;
+        top: 335px;
       }
     }//.et_pb_contact_main_title
 
@@ -308,6 +315,9 @@
       .et_pb_contact_field_half {
         float: none;
         position: relative;
+        @media screen and (min-width: 769px) {
+          margin-bottom: 5%;
+        }
         &.required:before {
           position: absolute;
           left: 20px;
