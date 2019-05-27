@@ -117,5 +117,7 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory');?>/assets/js/transition.js"></script>
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory');?>/assets/js/custom.js"></script>
 
+    <script type="text/javascript" src="<?php bloginfo('stylesheet_directory');?>/assets/js/register_user.js"></script>
+
 </body>
 </html>

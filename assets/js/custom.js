@@ -14,6 +14,25 @@ jQuery(window).on('load', function () {
     };
 
 
+    if(jQuery('.TgtMktgLanding-form').length) {
+        jQuery('.TgtMktgLanding-form').find('form').each(function(){
+            var $form = jQuery(this);
+
+            $form.addClass('js-registration-form');
+            $form.find('input').not('[type="hidden"]').each(changeName);
+            $form.find('select').each(changeName);
+
+            function changeName (){
+                var $el = jQuery(this);
+                $el.addClass('js-registration-field');
+                $el.attr('name', $el.data('original_id'));
+            }
+
+        });
+    }
+
+
+
 });
 
 
@@ -56,6 +75,7 @@ jQuery(function(){
         jQuery('html, body').animate({scrollTop: jQuery(target).offset().top}, 400);
         return false;
     });
+
 
 
 

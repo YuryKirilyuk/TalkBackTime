@@ -1111,6 +1111,46 @@ iframe { width: 100%; }
 
 .section-form .et_pb_contact_form_container .et_contact_bottom_container .et_pb_button:before { display: block; content: 'No credit card required'; font-size: 16px; position: absolute; bottom: -25px; left: 0; color: #384353; width: 100%; opacity: 1; text-align: center; margin: 0; }
 
+.et_pb_code form { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+@media screen and (min-width: 769px) { .et_pb_code form { margin-left: -3%; } }
+
+@media screen and (max-width: 980px) { .et_pb_code form { padding: 0 40px 20px; } }
+
+@media screen and (max-width: 500px) { .et_pb_code form { padding: 0 20px 20px; } }
+
+.et_pb_code form .et_pb_contact_field_half { margin-bottom: 5%; float: none; position: relative; padding: 0 0 0 3%; width: 50%; }
+
+@media screen and (max-width: 768px) { .et_pb_code form .et_pb_contact_field_half { padding-left: 0; width: 100%; } }
+
+.et_pb_code form .et_pb_contact_field_half.required:before { bottom: 0; color: red; content: '*'; font-size: 14px; height: 9px; left: 20px; margin: auto; position: absolute; top: 0; }
+
+@media screen and (max-width: 768px) { .et_pb_code form .et_pb_contact_field_half.required:before { left: 3px; } }
+
+.et_pb_code form label { display: none; }
+
+.et_pb_code form input { background: none; border: none; border-bottom: 1px solid #384353; font-size: 19px; padding: 12px 16px; width: 100%; }
+
+.et_pb_code form input::-webkit-input-placeholder { color: #384353; font-weight: 300; opacity: .5; }
+
+.et_pb_code form input:-moz-placeholder { color: #384353; font-weight: 300; opacity: .5; }
+
+.et_pb_code form input::-moz-placeholder { color: #384353; font-weight: 300; opacity: .5; }
+
+.et_pb_code form input:-ms-input-placeholder { color: #384353; font-weight: 300; opacity: .5; }
+
+.et_pb_code form select { box-sizing: border-box; width: 100%; border: 0; border-radius: 0; background-color: #eee; background: none; border-bottom: 1px solid #384353; font-size: 19px; padding: 12px 16px; color: #384353; font-weight: 300; height: 51px; opacity: .7; }
+
+.et_pb_code form .info-text { font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif; font-weight: 300; font-size: 15px; color: #797b7c !important; margin-top: 15px; padding-left: 3%; }
+
+.et_pb_code form .et_contact_bottom_container { float: none; text-align: center; margin-top: 30px; margin-left: auto; margin-right: auto; }
+
+.et_pb_code form .et_pb_button { color: #fff; cursor: pointer; }
+
+.et_pb_code form .et_pb_button:before { bottom: -25px; display: block; content: 'No credit card required'; color: #384353; font-size: 16px; left: 0; margin: 0; opacity: 1; position: absolute; text-align: center; width: 100%; }
+
+.et_pb_code form .js-error-message { background: #fff; border-radius: 4px; font-size: 14px; color: #ff5379; margin-top: 3px; padding: 3px; position: absolute; top: 100%; width: 100%; }
+
 @media screen and (min-width: 981px) { .see-expressions { padding-top: 0 !important; padding-bottom: 25px !important; } }
 
 @media screen and (max-width: 480px) { .see-expressions { padding-top: 25px; padding-bottom: 25px; } }
