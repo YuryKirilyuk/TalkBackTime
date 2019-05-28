@@ -24,7 +24,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
 .section-privacy-notice .et_pb_text ul, .section-terms-of-use .et_pb_text ul, .section-acceptable-use-policy .et_pb_text ul, .section-eula .et_pb_text ul { margin-left: 30px; }
 
-.section-privacy-notice .et_pb_text ol h2, .section-terms-of-use .et_pb_text ol h2, .section-acceptable-use-policy .et_pb_text ol h2, .section-eula .et_pb_text ol h2 { margin-top: 2rem; }
+.section-privacy-notice .et_pb_text h2, .section-terms-of-use .et_pb_text h2, .section-acceptable-use-policy .et_pb_text h2, .section-eula .et_pb_text h2 { margin-top: 2rem; }
 
 .section-privacy-notice .et_pb_text ol ol, .section-terms-of-use .et_pb_text ol ol, .section-acceptable-use-policy .et_pb_text ol ol, .section-eula .et_pb_text ol ol { list-style-position: outside; }
 
@@ -1129,7 +1129,7 @@ iframe { width: 100%; }
 
 .et_pb_code form label { display: none; }
 
-.et_pb_code form input { background: none; border: none; border-bottom: 1px solid #384353; font-size: 19px; padding: 12px 16px; width: 100%; }
+.et_pb_code form input { background: none; border: none; border-bottom: 1px solid #384353; font-size: 19px; max-height: 48px; padding: 12px 16px; width: 100%; }
 
 .et_pb_code form input::-webkit-input-placeholder { color: #384353; font-weight: 300; opacity: .5; }
 
