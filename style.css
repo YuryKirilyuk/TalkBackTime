@@ -14,6 +14,10 @@ Version:     1.0.0
 
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { white-space: nowrap; }
 
+.page-id-529 header, .page-id-529 footer, .page-id-529 .main_title, .page-id-531 header, .page-id-531 footer, .page-id-531 .main_title, .page-id-597 header, .page-id-597 footer, .page-id-597 .main_title { display: none; }
+
+.page-id-529 .container, .page-id-531 .container, .page-id-597 .container { padding-top: 50px !important; }
+
 @media screen and (max-width: 1100px) { .page-title .et_pb_module { padding-top: 130px !important; } }
 
 .page-title h1 { font-size: 31px; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
@@ -1150,6 +1154,8 @@ iframe { width: 100%; }
 .et_pb_code form .et_pb_button:before { bottom: -25px; display: block; content: 'No credit card required'; color: #384353; font-size: 16px; left: 0; margin: 0; opacity: 1; position: absolute; text-align: center; width: 100%; }
 
 .et_pb_code form .js-error-message { background: #fff; border-radius: 4px; font-size: 14px; color: #ff5379; margin-top: 3px; padding: 3px; position: absolute; top: 100%; width: 100%; }
+
+.test-form form .et_pb_contact_field_half { width: 100%; }
 
 @media screen and (min-width: 981px) { .see-expressions { padding-top: 0 !important; padding-bottom: 25px !important; } }
 

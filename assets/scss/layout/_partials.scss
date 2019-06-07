@@ -2,6 +2,17 @@ h1,h2,h3,h4,h5,h6 {
   span {white-space: nowrap;}
 }
 
+.page-id-529,
+.page-id-531,
+.page-id-597 {
+  header,
+  footer,
+  .main_title {display: none;}
+  .container {
+    padding-top: 50px !important;
+  }
+}
+
 #main-content {
   //overflow: hidden;
 }

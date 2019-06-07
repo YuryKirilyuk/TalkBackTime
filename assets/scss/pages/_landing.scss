@@ -391,6 +391,8 @@
 
 
 
+
+
 .et_pb_code form {
   display: flex;
   flex-wrap: wrap;
@@ -515,6 +517,11 @@
 }//.et_pb_code form
 
 
+.test-form {
+  form .et_pb_contact_field_half {
+    width: 100%;
+  }
+}
 
 
 
